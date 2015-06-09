@@ -1,0 +1,343 @@
+/* ##############################################################################
+# Style tweaks                                                                  #
+# #############################################################################*/
+.margin-fix {
+  padding-top: 0px;
+  margin-left: -8px;
+}  
+
+@media (max-width:768px) {
+  .text-align {
+    text-align: center;
+  }
+}
+@media (min-width: 769px){
+  .text-align {
+    text-align: right;
+  }
+}
+
+#contentText {
+  margin-left: 0px;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 0;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.langheader {
+  margin: 6px 6px 0 0;
+}
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EEE;
+}
+
+.mouse {
+  cursor: pointer;
+}
+
+.icon-blue {
+  color: #0000ff;
+}
+.icon-red {
+  color: red;
+}
+.icon-green {
+  color: #00c400;
+}
+.icon-gray {
+  color: #c9c9c9;
+}
+.icon-white {
+  color: #ffffff;
+}
+.icon-yellow {
+  color: #ebeb00;
+}
+.icon-black {
+  color: #000000;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: none;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+}
+
+.specialPrice {
+   color: #ff0000;
+} 
+
+.font-black {
+    color: #3d3d3d;
+}
+
+.inputRequirement {
+    font-weight: bolder;
+    color: #b33a3a;
+}
+
+.break {
+    word-wrap: break-word;
+}
+
+/* ##############################################################################
+# Navigation Header                                                             #
+# #############################################################################*/
+/* Top Right Navigation Dropdown Styles */
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks,
+.navbar-top-links .dropdown-alerts {
+    width: 310px;
+    min-width: 0;
+}
+
+.navbar-top-links .dropdown-messages {
+    margin-left: 5px;
+}
+
+.navbar-top-links .dropdown-tasks {
+    margin-left: -59px;
+}
+
+.navbar-top-links .dropdown-alerts {
+    margin-left: -123px;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+/* Header Title Styles */
+.navbar-title {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-title:hover,
+.navbar-title:focus {
+  text-decoration: none;
+}
+.navbar-default .navbar-title {
+  color: #777;
+}
+.navbar-default .navbar-title:hover,
+.navbar-default .navbar-title:focus {
+  color: #777;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-title {
+  color: #777;
+}
+.navbar-inverse .navbar-title:hover,
+.navbar-inverse .navbar-title:focus {
+  color: #777;
+  background-color: transparent;
+}
+
+/* ##############################################################################
+# Browse for file                                                               #
+# #############################################################################*/
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/* ##############################################################################
+# Various Margin Settings                                                       #
+# #############################################################################*/
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr25 {
+  margin-right: 25px;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mb25 {
+  margin-bottom: 25px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+} 
+.ml15 {
+  margin-left: 15px;
+} 
+.ml20 {
+  margin-left: 20px;
+} 
+.ml25 {
+  margin-left: 25px;
+} 
+
+
+/* ##############################################################################
+# STICKY ADMIN NAV MENU                                                         #
+# #############################################################################*/
+#affix-nav {
+  width: 100%;
+  top:0;
+  z-index: 10000;
+}
+/* affix jumping fix */
+.nav-wrapper {
+  min-height: 60px;
+}
+
+/* ##############################################################################
+# BACK TO TOP BUTTON                                                            #
+# #############################################################################*/
+.back-to-top {
+  cursor: pointer; 
+  position: fixed; 
+  bottom: 30px; 
+  right:30px; 
+  display:none;
+  opacity: 0.8;
+  z-index: 10000;
+}
+.back-to-top:hover {
+  opacity: 1;
+}
+
+/* ##############################################################################
+# Pagination                                                                    #
+# #############################################################################*/
+.selectpicker {
+  font-size: 14px;
+  padding: 4px 12px;
+
+}
+
+
+/* ##############################################################################
+# Customer Edit Area                                                            #
+# #############################################################################*/
+
+  .panel-smart{
+    padding:20px;
+    background:#fff;
+    border:1px solid #e8e8e8;
+    -webkit-border-radius:0;
+       -moz-border-radius:0;
+        border-radius:0;
+  }
+    .panel-smart .panel-heading{
+      padding:5px 0 15px 0;
+      color:#252a2f;
+      border-bottom:1px solid #929497;
+    }
+    .panel-smart h3.panel-title{
+      font-size:24px;
+    }
+    .panel-smart .panel-body{
+      padding:20px 0 0;
+    }
+  .registration-area .inner{
+    margin-top:30px;
+    margin-bottom:20px;
+  }
+  .registration-area .control-label{
+    color:#000000;
+    font-weight:600;
+  }
