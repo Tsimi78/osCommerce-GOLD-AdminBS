@@ -1,18 +1,28 @@
 <?php
 /*
-  $Id$
+  $Id$ osC Admin BS by Tsimi
 
   osCommerce, Open Source E-Commerce Solutions
   http://www.oscommerce.com
 
-  Copyright (c) 2014 osCommerce
+  Copyright (c) 2015 osCommerce
 
   Released under the GNU General Public License
+
+  The following copyright announcement is in compliance
+  to section 2c of the GNU General Public License, and
+  can not be removed, or can only be modified
+  appropriately with additional copyright notices.
+
+  For more information please read the osCommerce
+  Copyright Policy at:
+
+  http://www.oscommerce.com/about/copyright
+
+  This comment must be left intact together with the
+  copyright announcement.
 */
 ?>
-<br />
-<table border="0" width="100%" cellspacing="0" cellpadding="2">
-  <tr>
-    <td align="center" class="smallText">osCommerce Online Merchant Copyright &copy; 2000-<?php echo date('Y'); ?> <a href="http://www.oscommerce.com" target="_blank">osCommerce</a> (<a href="http://www.oscommerce.com/Us&amp;Legal" target="_blank">Copyright and Trademark Policy</a>)</td>
-  </tr>
-</table>
+<div class="text-center mt25">
+	osCommerce Online Merchant Copyright © 2000-2015 osCommerce (Copyright and Trademark Policy)
+</div>
