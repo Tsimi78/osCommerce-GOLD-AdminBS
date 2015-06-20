@@ -66,6 +66,7 @@
 	</div>
 </div> <!-- eof row //-->
 
+<div class="row">
 <div class="nav-wrapper">
 <div id="affix-nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
 <!-- ADMIN NAV MENU STARTS //-->
@@ -149,6 +150,7 @@
 ?>
   </div>
 </nav>
+</div>
 </div>
 </div>
 
