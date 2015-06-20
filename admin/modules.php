@@ -258,7 +258,7 @@
         $keys = '';
         reset($mInfo->keys);
         while (list(, $value) = each($mInfo->keys)) {
-          $keys .= '<strong>' . $value['title'] . '</strong><br />';
+          $keys .= '<div class="text-fix-lg"><strong>' . $value['title'] . '</strong></div><br />';
           if ($value['use_function']) {
             $use_function = $value['use_function'];
             if (preg_match('/->/', $use_function)) {
@@ -272,7 +272,7 @@
               $keys .= tep_call_function($use_function, $value['value']);
             }
           } else {
-            $keys .= $value['value'];
+            $keys .= '<div class="text-fix-lg">' . $value['value'] . '</div>';
           }
           $keys .= '<br /><br />';
         }

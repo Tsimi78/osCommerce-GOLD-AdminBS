@@ -82,7 +82,7 @@
     }
 ?>
                 <td><?php echo $configuration['configuration_title']; ?></td>
-                <td><?php echo htmlspecialchars($cfgValue); ?></td>
+                <td><div class="text-fix"><?php echo htmlspecialchars($cfgValue); ?></div></td>
                 <td align="right"><?php if ( (isset($cInfo) && is_object($cInfo)) && ($configuration['configuration_id'] == $cInfo->configuration_id) ) { echo '<i class="fa fa-edit fa-lg mouse"></i>'; } else { echo '<a href="' . tep_href_link(FILENAME_CONFIGURATION, 'gID=' . $HTTP_GET_VARS['gID'] . '&cID=' . $configuration['configuration_id']) . '"><i class="fa fa-info-circle fa-lg" title="'. IMAGE_ICON_INFO .'"></i></a>'; } ?>&nbsp;</td>
               </tr>
 <?php

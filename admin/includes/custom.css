@@ -311,7 +311,7 @@ input[readonly] {
 
 
 /* ##############################################################################
-# Customer Edit Area                                                            #
+# Customer Edit                                                                 #
 # #############################################################################*/
 
   .panel-smart{
@@ -341,3 +341,16 @@ input[readonly] {
     color:#000000;
     font-weight:600;
   }
+
+.text-fix-lg {
+  white-space: nowrap; 
+  width: 25em; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.text-fix {
+  white-space: nowrap; 
+  width: 15em; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
