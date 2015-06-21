@@ -66,6 +66,8 @@
 	</div>
 </div> <!-- eof row //-->
 
+<?php if (DISPLAY_SIDE_MENU != 'true') { ?>
+	
 <div class="row">
 <div class="nav-wrapper">
 <div id="affix-nav" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
@@ -153,6 +155,8 @@
 </div>
 </div>
 </div>
+
+<?php } ?>
 
 <div class="col-xs-12">
 <?php

@@ -55,18 +55,45 @@ $.datepicker.setDefaults($.datepicker.regional['<?php echo JQUERY_DATEPICKER_I18
 ?>
 <!-- Stock osC JS //-->
 <script type="text/javascript" src="includes/general.js"></script>
-<!-- Bootstrap JS //-->
+<!-- Bootstrap JS using version 3.2.0 accordion won't toggle with later versions. //-->
 <script type="text/javascript" src="ext/bootstrap/js/bootstrap.js"></script>
 <!-- JS for Browse for file button //-->
 <script type="text/javascript" src="ext/bootstrap-filestyle.min.js"></script>
+<!-- Side Menu -->
+<script type="text/javascript" src="ext/bootstrap/js/offcanvas.js"></script>
 
 <!-- EOF JAVASCRIPT DEFINITIONS //-->
 
 </head>
 <body>
-
 	
 <div class="container-fluid">
-<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
-	<div class="row">
-		<div class="col-xs-12">
+	
+	<?php require(DIR_WS_INCLUDES . 'header.php'); ?>
+	
+  <?php if (DISPLAY_SIDE_MENU != 'true') { ?>
+
+			<div class="row">
+				<div class="col-xs-12">
+
+  <?php } else { ?>
+
+			<div class="row row-offcanvas row-offcanvas-left">
+
+		  <?php if (tep_session_is_registered('admin')) { 
+		  
+					include(DIR_WS_INCLUDES . 'column_left.php'); ?>
+		
+					<div class="col-xs-12 col-lg-10">  
+			 		 
+					<p class="visible-xs visible-sm visible-md menu_button">
+						<button type="button" class="btn btn-primary" data-toggle="offcanvas">Menu <i class="fa fa-bars"></i></button>
+					</p>
+					
+		  <?php }  else { ?> 
+		 
+					<div class="col-xs-12">  
+				
+		  <?php } ?>
+		  
+  <?php } ?>

@@ -23,6 +23,6 @@
   copyright announcement.
 */
 ?>
-<div class="text-center mt25">
+<div class="text-center mt25" style="padding:30px 0px;">
 	osCommerce Online Merchant Copyright © 2000-2015 osCommerce (Copyright and Trademark Policy)
 </div>

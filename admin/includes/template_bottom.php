@@ -11,10 +11,9 @@
 */
 ?>
 		</div> <!-- eof col-xs-12 //-->
-	</div> <!-- eof row //-->
+		<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
+	</div> <!-- eof row //-->		
 </div> <!-- eof container-fluid //-->
-
-<?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
 
 <!-- Back-to-top Button-->
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>  
