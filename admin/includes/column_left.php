@@ -55,7 +55,15 @@
   
    <div class="col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation" style="padding:0px;">
 	 <div class="panel-group-side" id="accordion">
-	   	   
+		
+		<div class="panel-side panel-default-side">
+			<div class="panel-heading">
+			<?php echo '<a style="text-decoration:none;" href="' . tep_href_link(FILENAME_DEFAULT) . '">' .
+						'<h3 class="panel-title"><i class="fa fa-dashboard fa-fw"></i> Dashboard</h3>' .
+						'</a>'; ?>	 
+			</div>
+		</div>
+    
 <?php
     foreach ($cl_box_groups as $groups) {
 	
