@@ -27,7 +27,7 @@
 <link rel="stylesheet" type="text/css" href="ext/bootstrap/css/bootstrap.css">
 <!-- Font Awesome CSS //-->
 <link rel="stylesheet" href="ext/font-awesome/css/font-awesome.min.css">
- <!-- Custom CSS //-->
+<!-- Custom CSS //-->
 <link rel="stylesheet" type="text/css" href="includes/custom.css">
 
 <!-- EOF CSS DEFINITIONS //-->
@@ -38,6 +38,7 @@
 <script type="text/javascript" src="<?php echo tep_catalog_href_link('ext/jquery/jquery-1.11.1.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo tep_catalog_href_link('ext/jquery/ui/jquery-ui-1.10.4.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo tep_catalog_href_link('ext/flot/jquery.flot.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo tep_catalog_href_link('ext/flot/jquery.flot.time.min.js', '', 'SSL'); ?>"></script>
 
 <script type="text/javascript">
 // fix jQuery 1.8.0 and jQuery UI 1.8.22 bug with dialog buttons; http://bugs.jqueryui.com/ticket/8484

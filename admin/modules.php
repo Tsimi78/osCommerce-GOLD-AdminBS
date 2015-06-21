@@ -169,7 +169,7 @@
         if ($module->check() > 0) {
           echo ' <tr class="info" onclick="document.location.href=\'' . tep_href_link(FILENAME_MODULES, 'set=' . $set . '&module=' . $class . '&action=edit') . '\'">';
         } else {
-          echo ' <tr class="info" onmouseover="rowOverEffect(this)" onmouseout="rowOutEffect(this)">';
+          echo ' <tr class="info">';
         }
       } else {
 		  echo ' <tr onclick="document.location.href=\'' . tep_href_link(FILENAME_MODULES, 'set=' . $set . (isset($HTTP_GET_VARS['list']) ? '&list=new' : '') . '&module=' . $class) . '\'">';
@@ -300,7 +300,7 @@
           }
 
           if (isset($mInfo->api_version)) {
-            echo '<i class="fa fa-info-circle fa-lg" title="'. IMAGE_ICON_INFO .'"></i>&nbsp;<strong>' . TEXT_INFO_API_VERSION . '</strong> ' . $mInfo->api_version;
+            echo '<br /><i class="fa fa-info-circle fa-lg" title="'. IMAGE_ICON_INFO .'"></i>&nbsp;<strong>' . TEXT_INFO_API_VERSION . '</strong> ' . $mInfo->api_version;
           }
 
 			echo '<br />' . $mInfo->description;
