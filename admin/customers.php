@@ -806,7 +806,7 @@ function check_form() {
 		echo '<div class="panel-body">' .
 			 '<br /><div class="text-center">' . tep_draw_button(IMAGE_EDIT, 'fa fa-pencil', tep_href_link(FILENAME_CUSTOMERS, tep_get_all_get_params(array('cID', 'action')) . 'cID=' . $cInfo->customers_id . '&action=edit'), 'primary', null, 'btn-warning') . 
 									  '&nbsp;' . tep_draw_button(IMAGE_DELETE, 'fa fa-trash-o', tep_href_link(FILENAME_CUSTOMERS, tep_get_all_get_params(array('cID', 'action')) . 'cID=' . $cInfo->customers_id . '&action=confirm'), 'primary', null, 'btn-danger') . 
-									  '&nbsp;' . tep_draw_button(IMAGE_ORDERS, 'fa fa-inbox', tep_href_link(FILENAME_ORDERS, 'cID=' . $cInfo->customers_id), 'primary', null, 'btn-info') . 
+									  '<br/><br/>' . tep_draw_button(IMAGE_ORDERS, 'fa fa-inbox', tep_href_link(FILENAME_ORDERS, 'cID=' . $cInfo->customers_id), 'primary', null, 'btn-info') . 
 									  '&nbsp;' . tep_draw_button(IMAGE_EMAIL, 'fa fa-envelope-o', tep_href_link(FILENAME_MAIL, 'customer=' . $cInfo->customers_email_address)) . '</div>' .
 			 '<br />' . TEXT_DATE_ACCOUNT_CREATED . ' ' . tep_date_short($cInfo->date_account_created) .
 			 '<br />' . TEXT_DATE_ACCOUNT_LAST_MODIFIED . ' ' . tep_date_short($cInfo->date_account_last_modified) .
