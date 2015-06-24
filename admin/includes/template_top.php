@@ -24,9 +24,9 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo tep_catalog_href_link('ext/jquery/ui/redmond/jquery-ui-1.10.4.min.css'); ?>">
 <!-- Bootstrap CSS //-->
-<link rel="stylesheet" type="text/css" href="ext/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="<?php echo tep_catalog_href_link('ext/bootstrap/css/bootstrap.css'); ?>">
 <!-- Font Awesome CSS //-->
-<link rel="stylesheet" href="ext/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!-- Custom CSS //-->
 <link rel="stylesheet" type="text/css" href="includes/custom.css">
 
@@ -56,12 +56,12 @@ $.datepicker.setDefaults($.datepicker.regional['<?php echo JQUERY_DATEPICKER_I18
 ?>
 <!-- Stock osC JS //-->
 <script type="text/javascript" src="includes/general.js"></script>
-<!-- Bootstrap JS using version 3.2.0 accordion won't toggle with later versions. //-->
-<script type="text/javascript" src="ext/bootstrap/js/bootstrap.js"></script>
+<!-- Bootstrap JS //-->
+<script type="text/javascript" src="<?php echo tep_catalog_href_link('ext/bootstrap/js/bootstrap.js'); ?>"></script>
 <!-- JS for Browse for file button //-->
 <script type="text/javascript" src="ext/bootstrap-filestyle.min.js"></script>
 <!-- Side Menu -->
-<script type="text/javascript" src="ext/bootstrap/js/offcanvas.js"></script>
+<script type="text/javascript" src="ext/offcanvas.js"></script>
 
 <!-- EOF JAVASCRIPT DEFINITIONS //-->
 
