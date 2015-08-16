@@ -107,28 +107,23 @@
     /* adjust as needed */
     color: #808080;
     /* adjust as needed */
+    font-size: 10px;
 }
 .panel-heading.accordion-toggle.collapsed:before {
     /* symbol for "collapsed" panels */
     content:"\e079";
     /* adjust as needed, taken from bootstrap.css */
+    font-size: 10px;
 }
 .panel-heading {
-    cursor: pointer;
+  cursor: pointer;
 }
 /* EOF chevron arrows */
-
-.panel-title a {
-  text-decoration: none;
+/* BOF Side Menu Styles */
+#sidebar {
+  min-height: 1080px;
+  background-color: #222d32;
 }
-.panel-side {
-  margin-bottom: 0px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-
 .panel-group-side {
   margin-bottom: 0px;
 }
@@ -136,48 +131,52 @@
   margin-bottom: 0;
 }
 .panel-group-side .panel + .panel {
-  margin-top: 0px;
+  margin-top: 0;
 }
 .panel-group-side .panel-heading {
   border-bottom: none;
 }
-
-.panel-default-side {
-  border-color: #ddd;
+.panel-side {
+  margin-bottom: 0;
+  background-color: #222d32;
 }
-.panel-default-side > .panel-heading > a {
-  color: #333;
-  background-color: #f8f8f8;
-  border-color: #ddd;
+.panel-side > .panel-heading {
+  border-radius: 0px;
+  border-left: 3px solid transparent;
 }
-
+.panel-side > .panel-heading:hover,
+.panel-side > .panel-heading > a > .panel-title:hover {
+  color: #ffffff;
+  background: #1e282c;
+  border-left-color: #3c8dbc;
+}
+.panel-side > .panel-heading,
+.panel-side > .panel-heading > a > .panel-title {
+  color: #b8c7ce;
+}
+.panel-side > .panel-heading > .panel-title > a:hover,
+.panel-side > .panel-heading > a:hover {
+  text-decoration: none;
+}
 .list-group-side {
   padding-left: 0;
   margin-bottom: 0px;
 }
 .list-group-item-side {
   position: relative;
+  margin: 0 1px;
+  background: #2c3b41;
   display: block;
-  padding: 5px 7px 5px 25px;
-  margin-bottom: -1px;
-  background-color: #fff;
-  /*border: 1px solid #ddd;*/
-  border-top: 1px solid #ddd; 
-}
-.list-group-item-side:first-child {
-  /*border-bottom: 1px solid #ddd;*/
-}
-.list-group-item-side:last-child {
-  margin-bottom: 0;
+  font-size: 14px;
+  padding: 6px 6px 6px 35px;
+  color: #8aa4af;
 }
 a.list-group-item-side:hover,
 a.list-group-item-side:focus {
-  color: #555;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #f5f5f5;
 }
-
-/* EOF side bar definitions */
+/* EOF Side Menu Styles */
 
 /* ##############################################################################
 # Off Canvas                                                                    #
@@ -200,54 +199,55 @@ a.list-group-item-side:focus {
 
   .row-offcanvas-right
   .sidebar-offcanvas {
-    right: -30%; /* 6 columns */
+    right: -230px; /* 6 columns */
   }
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -30%; /* 6 columns */
+    left: -230px; /* 6 columns */
   }
 
   .row-offcanvas-right.active {
-    right: 30%; /* 6 columns */
+    right: 230px; /* 6 columns */
   }
 
   .row-offcanvas-left.active {
-    left: 30%; /* 6 columns */
+    left: 230px; /* 6 columns */
   }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 30%; /* 6 columns */
+    width: 230px; /* 6 columns */
   }
 }
 /* adjusting for xs screen */
 @media (max-width: 767px) {
   .row-offcanvas-right
   .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
+    right: -230px; /* 6 columns */
   }
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
+    left: -230px; /* 6 columns */
   }
 
   .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
+    right: 230px; /* 6 columns */
   }
 
   .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
+    left: 230px; /* 6 columns */
   }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 50%; /* 6 columns */
+    width: 230px; /* 6 columns */
   }
 }
+
 /* ##############################################################################
 # Navigation Header                                                             #
 # #############################################################################*/
