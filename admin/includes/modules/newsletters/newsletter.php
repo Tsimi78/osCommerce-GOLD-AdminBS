@@ -29,29 +29,13 @@
       $mail_query = tep_db_query("select count(*) as count from " . TABLE_CUSTOMERS . " where customers_newsletter = '1'");
       $mail = tep_db_fetch_array($mail_query);
 
-      $confirm_string = '<table border="0" cellspacing="0" cellpadding="2">' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td class="main"><font color="#ff0000"><strong>' . sprintf(TEXT_COUNT_CUSTOMERS, $mail['count']) . '</strong></font></td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td>' . tep_draw_separator('pixel_trans.gif', '1', '10') . '</td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td class="main"><strong>' . $this->title . '</strong></td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td>' . tep_draw_separator('pixel_trans.gif', '1', '10') . '</td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td class="main"><tt>' . nl2br($this->content) . '</tt></td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td>' . tep_draw_separator('pixel_trans.gif', '1', '10') . '</td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '  <tr>' . "\n" .
-                        '    <td class="smallText" align="right">' . tep_draw_button(IMAGE_SEND, 'mail-closed', tep_href_link(FILENAME_NEWSLETTERS, 'page=' . $HTTP_GET_VARS['page'] . '&nID=' . $HTTP_GET_VARS['nID'] . '&action=confirm_send'), 'primary') . tep_draw_button(IMAGE_CANCEL, 'close', tep_href_link(FILENAME_NEWSLETTERS, 'page=' . $HTTP_GET_VARS['page'] . '&nID=' . $HTTP_GET_VARS['nID'])) . '</td>' . "\n" .
-                        '  </tr>' . "\n" .
-                        '</table>';
+      $confirm_string = '<div class="col-md-6 well">' .
+						'<font color="#ff0000"><strong>' . sprintf(TEXT_COUNT_CUSTOMERS, $mail['count']) . '</strong></font>' .
+                        '<br /><br /><strong>' . $this->title . '</strong>' . 
+                        '<br /><br />' . nl2br($this->content) .
+						'</div>' .
+						'<div class="clearfix"></div>' .
+                        tep_draw_button(IMAGE_SEND, 'fa fa-envelope', tep_href_link(FILENAME_NEWSLETTERS, 'page=' . $HTTP_GET_VARS['page'] . '&nID=' . $HTTP_GET_VARS['nID'] . '&action=confirm_send'), 'primary') . '&nbsp;' . tep_draw_button(IMAGE_CANCEL, 'fa fa-ban icon-red', tep_href_link(FILENAME_NEWSLETTERS, 'page=' . $HTTP_GET_VARS['page'] . '&nID=' . $HTTP_GET_VARS['nID'])) . '</div>';
 
       return $confirm_string;
     }
