@@ -85,7 +85,7 @@ $.datepicker.setDefaults($.datepicker.regional['<?php echo JQUERY_DATEPICKER_I18
 		  
 					include(DIR_WS_INCLUDES . 'column_left.php'); ?>
 		
-					<div class="col-xs-12 col-lg-10">  
+					<div class="col-xs-12 col-lg-10 mt10">  
 			 		 
 					<p class="visible-xs visible-sm visible-md menu_button">
 						<button type="button" class="btn btn-primary" data-toggle="offcanvas">Menu <i class="fa fa-bars"></i></button>
@@ -98,3 +98,8 @@ $.datepicker.setDefaults($.datepicker.regional['<?php echo JQUERY_DATEPICKER_I18
 		  <?php } ?>
 		  
   <?php } ?>
+  <?php
+	if ($messageStack->size > 0) {
+	echo '<div class="row"><div class="col-xs-12">' . $messageStack->output() . '</div></div>';
+	}
+  ?>
