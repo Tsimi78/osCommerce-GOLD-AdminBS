@@ -58,9 +58,9 @@
 		
 		<div class="panel-side panel-default-side">
 			<div class="panel-heading">
-			<?php echo '<a style="text-decoration:none;" href="' . tep_href_link(FILENAME_DEFAULT) . '">' .
-						'<h3 class="panel-title"><i class="fa fa-dashboard fa-fw"></i> Dashboard</h3>' .
-						'</a>'; ?>	 
+			<?php echo '<a href="' . tep_href_link(FILENAME_DEFAULT) . '">' .
+					   '<h3 class="panel-title"><i class="fa fa-dashboard fa-fw"></i> Dashboard</h3>' .
+					   '</a>'; ?>	 
 			</div>
 		</div>
     

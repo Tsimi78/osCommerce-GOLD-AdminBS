@@ -134,7 +134,7 @@
   require(DIR_WS_INCLUDES . 'template_top.php');
 ?>
   
-<div class="col-md-offset-4 col-md-4 text-center"><h1><?php echo HEADING_TITLE; ?></h1></div>
+<div class="text-center"><h1><?php echo HEADING_TITLE; ?></h1></div>
 
 <div class="col-md-offset-4 col-md-4">
 	<div class="panel panel-default">

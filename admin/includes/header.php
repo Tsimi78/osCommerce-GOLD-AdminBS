@@ -157,11 +157,3 @@
 </div>
 
 <?php } ?>
-
-<div class="col-xs-12">
-<?php
-    if ($messageStack->size > 0) {
-    echo $messageStack->output();
-  }
-  ?>
-  </div>

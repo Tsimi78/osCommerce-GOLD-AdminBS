@@ -67,7 +67,7 @@
 ?>
 
    <h3><?php echo HEADING_TITLE; ?></h3>
- 
+   
 <?php
   if ( ($action == 'preview') && isset($HTTP_POST_VARS['customers_email_address']) ) {
     switch ($HTTP_POST_VARS['customers_email_address']) {
@@ -84,40 +84,33 @@
 ?>
         <?php echo tep_draw_form('mail', FILENAME_MAIL, 'action=send_email_to_user'); ?>
      
-			<div class="row mt25">
-				<div class="col-sm-7">
-					<div class="row">
-						<label class="col-sm-2 text-right"><?php echo TEXT_CUSTOMER; ?></label>
-						
-						<div class="col-sm-7">
-							<?php echo $mail_sent_to; ?>
-						</div>
-					</div>
-					<div class="row">
-					<label class="col-sm-2 text-right"><?php echo TEXT_FROM; ?></label>
+           
+					<label class="col-sm-3">
+						<?php echo TEXT_CUSTOMER; ?>
+					</label>
+					
+						<?php echo $mail_sent_to; ?>
+				
+					<label class="col-sm-3">
+						<?php echo TEXT_FROM; ?>
+					</label>
 					<div class="col-sm-7">
 						<?php echo htmlspecialchars(stripslashes($HTTP_POST_VARS['from'])); ?>
 					</div>
-					</div>
-				<div class="row">
-					<label class="col-sm-2 text-right">
+				
+					<label class="col-sm-3">
 						<?php echo TEXT_SUBJECT; ?>
 					</label>
 					<div class="col-sm-7">	
 						<?php echo htmlspecialchars(stripslashes($HTTP_POST_VARS['subject'])); ?>
 					</div>
-					</div>
-				<div class="row">
-					<label class="col-sm-2 text-right">
+				
+					<label class="col-sm-3">
 						<?php echo TEXT_MESSAGE; ?>
 					</label>
 					<div class="col-sm-7">
 						<?php echo nl2br(htmlspecialchars(stripslashes($HTTP_POST_VARS['message']))); ?>
 					</div>
-					</div>
-				</div>
-			</div>
-			<br />
 		          
 <?php
 /* Re-Post all POST'ed variables */
@@ -127,10 +120,10 @@
         echo tep_draw_hidden_field($key, htmlspecialchars(stripslashes($value)));
       }
     }
-	echo '<div class="row"><div class="col-xs-12 col-sm-4 text-center">' . tep_draw_button(IMAGE_SEND_EMAIL, 'fa fa-paper-plane-o', null, 'primary',null, 'btn-default') . '&nbsp;' . tep_draw_button(IMAGE_CANCEL, 'fa fa-ban icon-red', tep_href_link(FILENAME_MAIL)) . '</div></div>'
+	echo '<div class="text-center">' . tep_draw_button(IMAGE_SEND_EMAIL, 'fa fa-paper-plane-o', null, 'primary',null, 'btn-default') . '&nbsp;' . tep_draw_button(IMAGE_CANCEL, 'fa fa-ban icon-red', tep_href_link(FILENAME_MAIL)) . '</div>'
 ?>
      
-        </form>
+          </form>
 <?php
   } else {
 ?>
@@ -147,9 +140,9 @@
                            'text' => $customers_values['customers_lastname'] . ', ' . $customers_values['customers_firstname'] . ' (' . $customers_values['customers_email_address'] . ')');
     }
 ?>
-		<div class="form-horizontal mt25">  
+		<div class="form-horizontal">  
 			<div class="form-group has-feedback">
-				<label class="control-label col-sm-2">
+				<label class="control-label col-sm-3">
 					<?php echo TEXT_CUSTOMER; ?>
 				</label>
 				<div class="col-sm-7">		
@@ -157,7 +150,7 @@
 				</div>
 			</div>
 			<div class="form-group has-feedback">
-				<label class="control-label col-sm-2">
+				<label class="control-label col-sm-3">
 					<?php echo TEXT_FROM; ?>
 				</label>
 				<div class="col-sm-7">					
@@ -165,7 +158,7 @@
 				</div>
 			</div>
 			<div class="form-group has-feedback">
-				<label class="control-label col-sm-2">              
+				<label class="control-label col-sm-3">              
 					<?php echo TEXT_SUBJECT; ?>
 				</label>
 				<div class="col-sm-7">					
@@ -173,7 +166,7 @@
 				</div>
 			</div>
 			<div class="form-group has-feedback">
-				<label class="control-label col-sm-2">  
+				<label class="control-label col-sm-3">  
                     <?php echo TEXT_MESSAGE; ?>
 				</label>
 				<div class="col-sm-7">				
@@ -181,8 +174,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-7 col-sm-offset-2 text-center">
-			<?php echo tep_draw_button(IMAGE_PREVIEW, 'fa fa-eye', null, 'primary', null, 'btn-default'); ?>	
+		<div class="text-center">
+			<?php echo tep_draw_button(IMAGE_PREVIEW, 'document', null, 'primary'); ?>	
 		</div>		
           </form>
 <?php

@@ -38,7 +38,7 @@
                 '    <th class="hidden-xs">' . MODULE_ADMIN_DASHBOARD_REVIEWS_DATE . '</th>' .
                 '    <th class="hidden-xs">' . MODULE_ADMIN_DASHBOARD_REVIEWS_REVIEWER . '</th>' .
                 '    <th>' . MODULE_ADMIN_DASHBOARD_REVIEWS_RATING . '</th>' .
-                '    <th class="text-center">' . MODULE_ADMIN_DASHBOARD_REVIEWS_REVIEW_STATUS . '</th>' .
+                '    <th>' . MODULE_ADMIN_DASHBOARD_REVIEWS_REVIEW_STATUS . '</th>' .
                 '  </tr>' . 
 				'</thead>';
 
@@ -51,7 +51,7 @@
                    '    <td class="hidden-xs">' . tep_date_short($reviews['date_added']) . '</td>' .
                    '    <td class="hidden-xs">' . tep_output_string_protected($reviews['customers_name']) . '</td>' .
                    '    <td>' . tep_draw_stars($reviews['reviews_rating']) . '</td>' .
-                   '    <td class="text-center">' . $status_icon . '</td>' .
+                   '    <td style="text-align: center;">' . $status_icon . '</td>' .
                    '  </tr>' . 
 				   '</tbody>';
       }

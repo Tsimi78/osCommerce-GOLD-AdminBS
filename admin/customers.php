@@ -804,10 +804,10 @@ function check_form() {
 				<div class="panel-heading"><span class="panel-title"><strong>' . $cInfo->customers_firstname . ' ' . $cInfo->customers_lastname . '</strong></span></div>';
 		
 		echo '<div class="panel-body">' .
-			 '<br /><div class="text-center">' . tep_draw_button(IMAGE_EDIT, 'fa fa-pencil', tep_href_link(FILENAME_CUSTOMERS, tep_get_all_get_params(array('cID', 'action')) . 'cID=' . $cInfo->customers_id . '&action=edit'), 'primary', null, 'btn-warning') . 
-									  '&nbsp;' . tep_draw_button(IMAGE_DELETE, 'fa fa-trash-o', tep_href_link(FILENAME_CUSTOMERS, tep_get_all_get_params(array('cID', 'action')) . 'cID=' . $cInfo->customers_id . '&action=confirm'), 'primary', null, 'btn-danger') . 
-									  '<br/><br/>' . tep_draw_button(IMAGE_ORDERS, 'fa fa-inbox', tep_href_link(FILENAME_ORDERS, 'cID=' . $cInfo->customers_id), 'primary', null, 'btn-info') . 
-									  '&nbsp;' . tep_draw_button(IMAGE_EMAIL, 'fa fa-envelope-o', tep_href_link(FILENAME_MAIL, 'customer=' . $cInfo->customers_email_address)) . '</div>' .
+			 '<br /><div class="text-center">' . tep_draw_button(IMAGE_EDIT, 'fa fa-pencil', tep_href_link(FILENAME_CUSTOMERS, tep_get_all_get_params(array('cID', 'action')) . 'cID=' . $cInfo->customers_id . '&action=edit'), 'primary', null, 'btn-warning btn-sm') . 
+									  '&nbsp;' . tep_draw_button(IMAGE_DELETE, 'fa fa-trash-o', tep_href_link(FILENAME_CUSTOMERS, tep_get_all_get_params(array('cID', 'action')) . 'cID=' . $cInfo->customers_id . '&action=confirm'), 'primary', null, 'btn-danger btn-sm') . 
+									  '&nbsp;' . tep_draw_button(IMAGE_ORDERS, 'fa fa-inbox', tep_href_link(FILENAME_ORDERS, 'cID=' . $cInfo->customers_id), 'primary', null, 'btn-info btn-sm') . 
+									  '&nbsp;' . tep_draw_button(IMAGE_EMAIL, 'fa fa-envelope-o', tep_href_link(FILENAME_MAIL, 'customer=' . $cInfo->customers_email_address), 'primary', null, 'btn-default btn-sm') . '</div>' .
 			 '<br />' . TEXT_DATE_ACCOUNT_CREATED . ' ' . tep_date_short($cInfo->date_account_created) .
 			 '<br />' . TEXT_DATE_ACCOUNT_LAST_MODIFIED . ' ' . tep_date_short($cInfo->date_account_last_modified) .
 			 '<br />' . TEXT_INFO_DATE_LAST_LOGON . ' '  . tep_date_short($cInfo->date_last_logon) .
