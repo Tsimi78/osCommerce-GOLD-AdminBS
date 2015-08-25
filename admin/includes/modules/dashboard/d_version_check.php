@@ -53,7 +53,7 @@
 				'<thead>' .
 				'  <tr>' . 
                 '    <th>' . MODULE_ADMIN_DASHBOARD_VERSION_CHECK_TITLE . '</th>' .
-                '    <th style="text-align: right;">' . MODULE_ADMIN_DASHBOARD_VERSION_CHECK_DATE . '</th>' .
+                '    <th class="text-right">' . MODULE_ADMIN_DASHBOARD_VERSION_CHECK_DATE . '</th>' .
                 '  </tr>' . 
 				'</thead>';
 
@@ -66,7 +66,7 @@
       $output .= '<tbody>' .
 				 '  <tr>' .
                  '    <td><a href="' . tep_href_link(FILENAME_VERSION_CHECK) . '">' . MODULE_ADMIN_DASHBOARD_VERSION_CHECK_CHECK_NOW . '</a></td>' .
-                 '    <td style="text-align: right;">' . $date_last_checked . '</td>' .
+                 '    <td class="text-right">' . $date_last_checked . '</td>' .
                  '  </tr>' .
 				 '</tbody>' . 
                  '</table>';

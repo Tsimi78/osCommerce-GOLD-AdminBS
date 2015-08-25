@@ -46,7 +46,7 @@
           $output .= '  <div class="panel-body"><a href="' . $p['url'] . '" target="_blank"><strong>' . $p['title'] . '</strong></a> (' . $p['category_title'] . ')<br />' . $p['status_update'] . '</div>';
         }
 
-        $output .= '<div class="panel-footer" style="text-align: right;"><a href="http://www.oscommerce.com/Services" target="_blank">' . MODULE_ADMIN_DASHBOARD_PARTNER_NEWS_MORE_TITLE . '</a></div>' .
+        $output .= '<div class="panel-footer text-right"><a href="http://www.oscommerce.com/Services" target="_blank">' . MODULE_ADMIN_DASHBOARD_PARTNER_NEWS_MORE_TITLE . '</a></div>' .
                    '</div>';
       }
 
